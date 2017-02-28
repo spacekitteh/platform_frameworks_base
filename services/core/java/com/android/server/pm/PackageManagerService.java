@@ -3099,7 +3099,7 @@ public class PackageManagerService extends IPackageManager.Stub {
             }
         } catch (Throwable t) {
             // We should never die because of any failures, this is system code!
-            Log.e("PackageManagerService.FAKE_PACKAGE_SIGNATURE", t);
+            Log.e("PackageManagerService.FAKE_PACKAGE_SIGNATURE", t.toString());
         }
         return pi;
     }
